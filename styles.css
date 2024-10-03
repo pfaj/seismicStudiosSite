@@ -24,6 +24,7 @@ footer{
 hr{
     color: white;
     border-radius:8px;
+    margin: 0 20px;
 }
 
 .logoImage{
@@ -51,21 +52,23 @@ hr{
     text-decoration: none;
     color: white;
 }
-.navItem>a{
+.navItem>a, .navButton>a{
     text-decoration: none;
     color:white;
 }
-.navItem:nth-child(3){
+.navButton{
+    text-align:center;
     border: 1px solid white;
     border-radius: 10px;
     padding: 8px 20px;
     color: white;
+    width: fit-content;
 }
 
-.navItem:nth-child(3):hover, .navItem:nth-child(3):hover>a{
+.navButton:hover, .navButton:hover>a{
     background-color: white;
     text-decoration: none;
-    color:black;
+    color:#252325;
 }
 
 .navItem:hover{
@@ -102,8 +105,48 @@ hr{
     color:white;
 }
 
-@media (max-width: 512px){
-    .companyName{
-        display:none;
+.infoContainer{
+    display:flex;
+    flex-direction: row;
+    height:40vh;
+    flex-wrap: wrap;
+}
+
+.infoLeft, .infoRight{
+    height:100%;
+    flex-basis:48%;
+    padding: 20px;
+}
+
+.infoLeft{
+    font-weight: bold; 
+    font-size:40px;
+    color: white;
+    background-color: #252325;
+}
+
+@media (max-width: 864px){
+    .heroText{
+        font-size: 80px;
+    }
+    .heroSubText{
+        font-size: 30px;
+    }
+}
+@media (max-width: 624px){
+    .heroText{
+        font-size: 50px;
+    }
+    .heroSubText{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 384px){
+    .heroText{
+        font-size: 40px;
+    }
+    .heroSubText{
+        font-size: 10px;
     }
 }
