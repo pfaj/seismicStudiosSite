@@ -1,0 +1,113 @@
+:root{
+    --primaryColor: #252325;
+    --secondaryColor: white;
+    --accentColor: #BE8746;
+    --secondaryAccentColor: #777777;
+}
+*{
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+nav, footer{
+    height: 10vh;
+    display:flex;
+    background-color: var(--primaryColor);
+    color:var(--secondaryColor);
+    align-items: center;
+    justify-content: space-around;
+}
+nav{
+    position: sticky;
+    height: 8vh;
+    z-index: 1;
+}
+
+hr{
+    color: var(--secondaryColor);
+    border-radius:8px;
+}
+
+.logoImage{
+    justify-content: left;
+    height: 10vh;
+    width: auto;
+    filter: invert(1) saturate(0);
+}
+.companyName{
+    font-weight: 600;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+}
+.navLinks{
+    display: flex;
+    gap: 20px;
+}
+
+.navItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--secondaryColor);
+}
+.navItem>a, .navButton>a{
+    text-decoration: none;
+    color:var(--secondaryColor);
+}
+.navButton{
+    text-align:center;
+    border: 1px solid var(--secondaryColor);
+    border-radius: 10px;
+    padding: 8px 20px;
+    color: var(--secondaryColor);
+    width: fit-content;
+}
+
+.navButton:hover, .navButton:hover>a{
+    background-color: var(--secondaryColor);
+    text-decoration: none;
+    color:var(--primaryColor);
+}
+
+.navItem:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer{
+    background-color: var(--primaryColor);
+    display: flex;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid var(--secondaryColor);
+}
+
+.footerContainer{
+    display: flex;
+    flex-basis: 100%;
+}
+
+.footerLinks{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 18px;
+    padding: 5px;
+}
+.footerLine{
+    width: 20%;
+}
+.footerItem{
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
