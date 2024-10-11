@@ -79,7 +79,17 @@ label{
 .formItems{
     display: flex;
     flex-direction: column;
-    
+}
+
+.formItems > button[type=submit]{
+    margin-top: 20px;
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+    border: 1px solid var(--accentColor);
+    border-radius: 8px;
+    padding: 5px;
+    width: 10%;
+    height: 30px;
 }
 
 .formItem{
