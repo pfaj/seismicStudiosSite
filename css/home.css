@@ -74,6 +74,14 @@
     .heroSubText{
         font-size: 15px;
     }
+
+    .infoContainer{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height:40vh;
+        width: 100vw;
+    }
 }
 
 @media (max-width: 384px){
