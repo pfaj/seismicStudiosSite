@@ -3,7 +3,7 @@ main{
     color: var(--secondaryColor);
 }
 
-input, select{
+input, select, textarea{
     border-radius: 10px;
     padding: 5px;
     border: 1px solid var(--secondaryColor);
@@ -81,15 +81,25 @@ label{
     flex-direction: column;
 }
 
-.formItems > button[type=submit]{
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 20px;
     margin-top: 20px;
+    margin-left: 43%;
     background-color: var(--primaryColor);
     color: var(--secondaryColor);
     border: 1px solid var(--accentColor);
     border-radius: 8px;
     padding: 5px;
-    width: 10%;
+    width: 100px;
     height: 30px;
+}
+.button:hover{
+    background-color: var(--accentColor);
+    color: var(--primaryColor);
 }
 
 .formItem{
@@ -117,6 +127,9 @@ label{
 }
 
 @media(max-width: 480px) {
+    .button{
+        margin-left: 35%;
+    }
     .heroText{
         font-size: 60px;
     }

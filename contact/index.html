@@ -50,23 +50,22 @@
                     <legend class="formLegend">
                         <h2>CONTACT INFORMATION</h2>
                         <hr class="heroLine">
-
                     </legend>
                     <div class="formItems">
 
                         <div class="formItem">
-                            <label for="username">First Name</label>
+                            <label for="username">First Name *</label>
                             <input id="username" placeholder="First Name" type="text" name="first" required>
                         </div>
 
                         <div class="formItem">
-                            <label for="password">Last Name</label>
+                            <label for="password">Last Name *</label>
 
                             <input id="password" placeholder="Last Name" type="text" name="last" required>
                         </div>
 
                         <div class="formItem">
-                            <label for="email">Email</label>
+                            <label for="email">Email *</label>
                             <input id="email" placeholder="Email" type="email" name="email" required>
                         </div>
 
@@ -75,10 +74,6 @@
                             <input id="phone" placeholder="Phone Number" type="text" name="cellphone">
                         </div>
 
-                        <div class="formItem">
-                            <label for="resume">Relevant Files</label>
-                            <input type="file" placeholder="Resume" name="resume">
-                        </div>
 
                         <div class="formItem">
                             <br>
@@ -105,14 +100,19 @@
                             </select>
                         </div>
                         <div class="formItem">
-                            <label for="message">Message</label>
-                            <textarea id="alotooftext" name="" cols="30" rows="5"></textarea>
+                            <label for="resume">Relevant Files</label>
+                            <input type="file" placeholder="Resume" name="resume">
+                        </div>
+                        <div class="formItem">
+                            <label for="message">Message *</label>
+                            <textarea id="message" placeholder="Enter message here..." name="message" cols="30"
+                                rows="5"></textarea>
                             <br>
                             <br>
                             <br>
                             <br>
                         </div>
-                        <button id="submit" type="submit">Submit</button>
+                        <button class="button" id="submit" type="submit">Submit</button>
                     </div>
 
                 </form>
