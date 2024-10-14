@@ -129,6 +129,40 @@ hr{
 }
 
 
+.heroImageContainer{
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroImage{
+    overflow: hidden;
+    width: 100vw;
+    height: 30vh;
+    object-fit: cover;
+    filter: blur(3px);
+    transform: scale(1.05);
+}
+.heroText{
+    position: absolute;
+    font-weight: 400;
+    font-size: 110px;
+    color:var(--secondaryColor);
+}
+
+.heroLine{
+    margin: 0px 20px;
+}
+
+.heroSubText{
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+    padding-top:5px;
+    color:var(--secondaryColor);
+}
+
 @media(max-width: 480px){
     .footerContainer{
         display: flex;
