@@ -163,6 +163,16 @@ hr{
     color:var(--secondaryColor);
 }
 
+@media(max-width: 800px) {
+
+    .heroText{
+        font-size: 80px;
+    }
+    .heroSubText{
+        font-size: 30px;
+    }
+}
+
 @media(max-width: 480px){
     .footerContainer{
         display: flex;
@@ -176,4 +186,11 @@ hr{
     .footerItem:nth-child(1){
         display: none;
     }
+    .heroText{
+        font-size: 60px;
+    }
+    .heroSubText{
+        font-size: 30px;
+    }
 }
+
