@@ -113,7 +113,7 @@ hr{
 }
 
 .footerLogo{
-    height: 10vh;
+    height: 70px;
     width: auto;
 }
 
@@ -199,10 +199,11 @@ hr{
     .footerItem{
         padding: 15px;
         flex-basis: 50%;
+        font-size: 18px;
     }
     
     .footerLogo{
-        height: 7vh;
+        height: 40px;
     }
 
     .footerItem:nth-child(1){
