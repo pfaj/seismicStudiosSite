@@ -2,18 +2,90 @@
     height: 60vh;
     width: 100%;
 }
-.textContainer{
-    padding: 0px 5px;
+
+.missionLine{
+    margin: 0px 80px;
+}
+
+.missionStatementContainer{
+    padding: 0px 10px;
     display: flex;
     flex-direction: column;
-    background-color: var(--primaryColor);
-
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor);
 }
+
+.missionStatementContent{
+    padding: 60px 50px;
+    font-size: 22px;
+    font-weight: 800;
+    text-align: center;
+}
+
 .heroSubtext{
     color: var(--secondaryColor);
 }
 
 
+.aboutUsContainer{
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+}
+
+.aboutUsContent{
+    padding: 60px 50px;
+    font-size: 22px;
+    font-weight: 800;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutUsHeader{
+    font-size: 22px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.aboutUsCardContainer{
+    margin-top: 20px;
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.aboutUsCard{
+    display: flex;
+    flex-basis: 20%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid var(--darkAccentColor);
+    background-color: var(--primaryColor);
+    box-shadow: 5px 5px 5px black;
+}
+
+.cardImage{
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+}
 @media (max-width: 2048px) {
     .heroImage{
         transform: scale(1.3);
