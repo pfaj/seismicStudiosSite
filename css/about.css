@@ -2,6 +2,16 @@
     height: 60vh;
     width: 100%;
 }
+.textContainer{
+    padding: 0px 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primaryColor);
+
+}
+.heroSubtext{
+    color: var(--secondaryColor);
+}
 
 
 @media (max-width: 2048px) {
