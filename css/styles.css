@@ -1,7 +1,7 @@
 :root{
     --primaryColor: #252325;
     --secondaryColor: white;
-    --accentColor: #6894BC;
+    --accentColor: #759BCD;
     --secondaryAccentColor: #777777;
     --darkAccentColor: #1F1E1F;
 }
@@ -20,6 +20,7 @@ nav, footer{
     justify-content: space-around;
 }
 nav{
+    top:0;
     position: sticky;
     height: 8vh;
     z-index: 1;
