@@ -11,7 +11,7 @@ input, select, textarea{
     padding: 5px;
     border: 1px solid var(--secondaryColor);
     background-color: var(--secondaryColor);
-    color: var(--secondaryAccentColor);
+    color: var(--darkAccentColor);
 }
 
 input:focus{

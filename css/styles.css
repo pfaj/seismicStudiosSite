@@ -159,7 +159,6 @@ hr{
     width: 100vw;
     height: 30vh;
     object-fit: cover;
-    filter: blur(3px);
     transform: scale(1.05);
 }
 .heroText{
