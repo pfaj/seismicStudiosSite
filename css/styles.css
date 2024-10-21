@@ -11,6 +11,9 @@
     padding: 0;
     margin: 0;
 }
+a{
+    text-decoration: none;
+}
 nav, footer{
     height: 10vh;
     display:flex;

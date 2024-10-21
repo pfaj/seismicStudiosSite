@@ -1,46 +1,73 @@
 /* Makes the hero image the full size image so I can reuse the rest of the hero container
    on the other pages  */
 .heroImage{
-    height: auto;
+    height: 80vh;
+}
+.infoButton{
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    border-color: var(--accentColor);
 }
 
-.infoContainer{
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    height:40vh;
-    width: 100vw;
-}
-
-.infoLeft, .infoRight{
-    height:100%;
-    flex-basis:50%;
-    background-color: var(--accentColor);
-}
-
-.infoLeft{
-    font-weight: bold; 
-    font-size:40px;
+.infoContainer {
+    background-color: var(--darkAccentColor);
     color: var(--secondaryColor);
-    background-color: var(--primaryColor);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden; /* This will clip any overflowing content */
 }
 
-.infoContainerContent{
-    padding: 10px;
-    height:100%;
-    display:flex;
+.infoSection {
+    display: flex;
+    flex-direction: row;
+    width: 100%; 
+}
+
+.infoImage {
+    flex: 1;
+    overflow: hidden;
+}
+
+.infoImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.infoSection:nth-child(even) {
+    flex-direction: row-reverse;
 }
 
 
-@media (max-width: 864px){
-    .heroText{
-        font-size: 80px;
-    }
-    .heroSubText{
-        font-size: 30px;
-    }
+.infoText, .infoImage {
+    flex: 1;
+    border-radius: 0px 10px 0px 10px;
 }
+
+.infoText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:  20px;
+}
+
+.infoText h2 {
+    font-size: 48px;
+    padding-bottom: 5px;
+}
+
+
+.infoText p{
+    font-size: 1.5em;
+}
+
 @media (max-width: 624px){
+    .heroImage{
+        height:40vh;
+        transform: scale(1.8);
+    }
     .heroText{
         font-size: 50px;
     }
@@ -48,12 +75,32 @@
         font-size: 15px;
     }
 
-    .infoContainer{
-        display:flex;
-        flex-wrap: wrap;
+    .infoSection, .infoSection:nth-child(even) {
         flex-direction: column;
-        height:40vh;
-        width: 100vw;
+    }
+    
+    .infoText, .infoImage {
+        width: 100%;
+    }
+
+    .infoText {
+        padding: 50px 10px;
+    }
+
+    .infoText h2{
+        font-size: 20px;
+    }
+    .infoText p{
+        font-size: 1em;
+    }
+
+    .infoImage {
+        height: 300px; 
+        border-radius: 10px;
+    }
+
+    .infoButton{
+        font-size: 14px;
     }
 }
 
